@@ -1,0 +1,27 @@
+// Utilize this for something cool
+// .navigation:hover > a:not(:hover) {
+//     -webkit-filter: grayscale(80%) blur(5px);
+// }
+//
+.content > section {
+    opacity: 0;
+    position: relative;
+    left: -2000px;
+    width: 0;
+}
+
+.about {
+    background-color: #d9534f;
+}
+
+.portfolio {
+    background-color: #5cb85c;
+}
+
+.services {
+    background-color: #5bc0de;
+}
+
+.contact {
+    background-color: #f0ad4e;
+}
