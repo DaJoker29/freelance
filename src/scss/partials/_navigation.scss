@@ -1,0 +1,51 @@
+.navigation {
+    min-height: 100%;
+    text-align: center;
+    > a {
+        min-height: 50%;
+        transition: .3s;
+        > p {
+            color: transparentize(black, .4);
+            margin-top: 50%;
+        }
+
+        &:hover > p.h1 {
+            transition: .1s;
+            font-size: 48px;
+        }
+    }
+}
+
+.navigation:hover > a:not(:hover) {
+    -webkit-filter: grayscale(80%) blur(5px);
+}
+
+.about {
+    background-color: #d9534f;
+}
+
+.portfolio {
+    background-color: #5cb85c;
+}
+
+.services {
+    background-color: #5bc0de;
+}
+
+.contact {
+    background-color: #f0ad4e;
+}
+
+@media (max-width: 768px) {
+    .navigation > a > p {
+        margin: 0;
+    }
+}
+
+@media(max-width: 992px) {
+    .navigation > a > p {
+        text-align: left;
+        padding-left: 3em;
+        transform: rotate(90deg);
+    }
+}
