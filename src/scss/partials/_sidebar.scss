@@ -1,7 +1,8 @@
 .sidebar {
-    padding: 3em;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
 
     .well {
-        margin: 3em 0;
+        margin: $gutter 0;
     }
 }

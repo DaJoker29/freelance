@@ -7,7 +7,17 @@ $(window).load(function() {
     $('#preloader').delay(time).fadeOut('slow');
 
     // Stagger Display
-    $('.content > section').delay(time).each(function( index, element) {
+    $('.content > section').delay(time).each(function( index ) {
         $(this).delay(time * index).fadeIn('slow').animate({'left': 0, 'width': '100%', 'opacity': 1});
+    }).promise().done(function() {
+        $('.owl-carousel').owlCarousel({
+            items: 3,
+            lazyLoad: true,
+            navigation: true,
+            navigationText: ['Back', 'Next'],
+            pagination: false,
+            autoPlay: 3000,
+            stopOnHover: true
+        });
     });
 });
