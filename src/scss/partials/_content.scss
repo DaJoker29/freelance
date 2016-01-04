@@ -12,7 +12,7 @@
     h2 {
         color: #fff;
     }
-    text-shadow: 1px 1px 0 transparentize(black, .7);
+    text-shadow: 1px 1px 0 transparentize(black, .6);
 }
 
 .about {
@@ -36,5 +36,9 @@
 }
 
 a.thumbnail:hover > img {
-    box-shadow: 0 0 0 2px $orange;
+    box-shadow: 0 0 0 3px $red;
+}
+
+img.hero {
+    padding: $gutter / 5;
 }

@@ -4,6 +4,10 @@
 
 .owl-theme .owl-controls .owl-buttons div {
     color: $gray;
-    background-color: $blue-dark;
+    background-color: $red;
     border-radius: $gutter;
+}
+
+.owl-item.loading{
+    background: url(img/lazy-load.gif) no-repeat center center
 }

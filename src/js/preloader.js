@@ -10,8 +10,8 @@ $(window).load(function() {
     $('.content > section').delay(time).each(function( index ) {
         $(this).delay(time * index).fadeIn('slow').animate({'left': 0, 'width': '100%', 'opacity': 1});
     }).promise().done(function() {
-        $('.owl-carousel').owlCarousel({
-            items: 3,
+        $('.portfolio-carousel').owlCarousel({
+            items: 4,
             lazyLoad: true,
             navigation: true,
             navigationText: ['Back', 'Next'],

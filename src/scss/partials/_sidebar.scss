@@ -6,3 +6,13 @@
         margin: $gutter 0;
     }
 }
+
+.sidebar.affix {
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .sidebar.affix {
+        position: relative;
+    }
+}
