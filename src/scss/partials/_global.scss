@@ -1,0 +1,14 @@
+textarea {
+    resize: none;
+}
+
+a {
+    transition: 0.4s;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $gold;
+        text-decoration: none;
+    }
+}

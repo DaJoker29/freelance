@@ -4,21 +4,33 @@
     <title>Gus Buckingham &mdash; Web Developer</title>
     <link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="vendor/owl-carousel/owl.transitions.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha256-AbCXzDgd7Vj/2JrsXgjrLdYZ92AgN262cXvQr4tAQa4= sha512-cA2CLCEXBR7hnXGgSNa+TaQ7WT2zW1IVm6uCLcu3ebHNhy+VIudw9kwgHlcL57wCiiXLZ1x7yT5Mv3QkDO2XZA==" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Preloader -->
-    <div id="preloader">
+    <div id="preloader" class="bg-primary">
+        <div class="text-center">If your page doesn't load, please make sure that <strong>Javascript</strong> is enabled. This page requires it.</div>
         <div id="status">&nbsp;</div>
     </div>
     <!-- Container -->
-    <div class="container-fluid" role="main">
+    <div class="container-fluid">
         <!-- Main Content -->
-        <main class="content col-sm-8" role="main">
-            <section class="about">
-                <h2>Howdy...</h2>
-                <img src="//placehold.it/480x320" alt="" class="hero img-responsive center-block">
+        <main class="content col-xs-12 col-md-8" role="main">
+            <section class="about bg-danger">
+                <h2>Howdy,</h2>
+                <div class="hero-slider owl-carousel">
+                    <div>
+                        <img src="//placehold.it/480x320" alt="" class="img-responsive center-block">
+                    </div>
+                    <div>
+                        <img src="//placehold.it/480x320" alt="" class="img-responsive center-block">
+                    </div>
+                    <div>
+                        <img src="//placehold.it/480x320" alt="" class="img-responsive center-block">
+                    </div>
+                </div>
                 <p class="lead">
                     I'm <strong>Gus Buckingham, front-end extraordinaire.</strong> I write code, among other things. Web programming and design have been my passion for over 9 years. Throughout the course, I have helped create countless sites and apps for people all over the world.
                 </p>
@@ -26,7 +38,7 @@
                     After years of operating in all aspects of web development, I’ve narrowed down my focus to the front-end. These days I work with different designers and agencies to can create clean and efficient websites for clients.
                 </p>
             </section>
-            <section class="services">
+            <section class="services bg-success">
                 <h2>Services</h2>
                 <p class="lead">
                     I specialize in building custom designs using <strong>HTML5</strong> and <strong>CSS</strong>. I can then add functionality via <strong>JavaScript</strong> and other popular technologies.
@@ -47,7 +59,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="portfolio">
+            <section class="portfolio bg-info">
                 <h2>Portfolio</h2>
                 <p class="lead">
                     Feel free to browse through some of my previous work.
@@ -70,7 +82,7 @@
                     </a>
                 </div>
             </section>
-            <section class="contact">
+            <section class="contact bg-warning">
                 <h2>Contact</h2>
                 <p class="lead">
                     Feel free to get in touch for a quote on your next project.
@@ -81,13 +93,33 @@
                         <abbr title="Email">E:</abbr> <a href="mailto:captain@zerodaedalus.net">captain@zerodaedalus.net</a>
                     </address>
                 </p>
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email Address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput">Phone Number (optional)</label>
+                        <input type="phone" class="form-control" id="phoneInput" placeholder="(555) 555-5555">
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea name="messageInput" id="messageInput" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
             </section>
         </main>
         <!-- Sidebar -->
-        <aside data-spy="affix" class="sidebar col-sm-4 text-center">
+        <aside data-spy="affix" class="sidebar col-xs-12 col-md-4 text-center">
             <!-- Sidebar/Info -->
             <img src="http://placehold.it/200x200" alt="Profile Picture" class="img-circle img-responsive center-block">
-            <p class="h1">Hi, I'm Gus.<br><small>I build cool stuff.</small></p>
+            <p class="h1">Gus<br><small>I build cool stuff.</small></p>
             <!-- Sidebar/CTA -->
             <div class="well well-lg">
                 <p class="h2">I'm available for hire <br><small>so feel free to <a href="#contact">get in touch.</a></small></p>
@@ -98,7 +130,9 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="vendor/jquery.maskedinput.min.js"></script>
     <script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+    <script src="vendor/SmoothScroll.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>

@@ -15,30 +15,15 @@
     text-shadow: 1px 1px 0 transparentize(black, .6);
 }
 
-.about {
-    background-color: #d9534f;
-}
-
-.portfolio {
-    background-color: #5cb85c;
-}
-
-.services {
-    background-color: #5bc0de;
-}
-
-.contact {
-    background-color: #f0ad4e;
-}
-
-.thumbnail > img {
+.thumbnail img,
+.hero-slider img {
     border: 2px solid $gray;
 }
 
 a.thumbnail:hover > img {
-    box-shadow: 0 0 0 3px $red;
+    box-shadow: 0 0 0 3px $blue-dark;
 }
 
-img.hero {
-    padding: $gutter / 5;
+.hero-slider {
+    opacity: 0;
 }
