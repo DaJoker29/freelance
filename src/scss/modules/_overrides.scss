@@ -1,5 +1,12 @@
 .thumbnail {
     background-color: transparent;
+    img {
+        width: 200px;
+    }
+}
+
+a.thumbnail:focus {
+    border-color: transparent;
 }
 
 .owl-theme .owl-controls .owl-buttons div {

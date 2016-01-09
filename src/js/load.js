@@ -17,8 +17,7 @@ $(window).load(function() {
         // Load Hero Carousel
         $('.hero-slider').owlCarousel({
             singleItem: true,
-            transitionStyle: 'backSlide',
-            autoHeight: true,
+            transitionStyle: 'goDown',
 
             navigation: true,
             navigationText: ['Back', 'Next'],
@@ -34,6 +33,18 @@ $(window).load(function() {
             navigation: true,
             navigationText: ['Back', 'Next'],
             pagination: false,
+            autoPlay: carouselInterval,
+            stopOnHover: true
+        });
+        // Load Popup Carousels
+        $('.modal-carousel').owlCarousel({
+            singleItem: true,
+            lazyLoad: true,
+            transitionStyle: 'backSlide',
+            autoHeight: true,
+
+            navigation: false,
+            pagination: true,
             autoPlay: carouselInterval,
             stopOnHover: true
         });

@@ -1,8 +1,3 @@
-// Utilize this for something cool
-// .navigation:hover > a:not(:hover) {
-//     -webkit-filter: grayscale(80%) blur(5px);
-// }
-//
 .content > section {
     left: -2000px;
     opacity: 0;
@@ -16,14 +11,63 @@
 }
 
 .thumbnail img,
-.hero-slider img {
+.hero-slider img,
+.modal img {
     border: 2px solid $gray;
+    padding: 2px;
 }
 
-a.thumbnail:hover > img {
-    box-shadow: 0 0 0 3px $blue-dark;
+.hero-slider img {
+    max-height: 50vh;
+}
+
+a.thumbnail {
+    transition: .4s;
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+    &:hover {
+        -webkit-filter: none;
+    }
+}
+
+.modal img {
+    max-height: 500px;
+}
+
+a.thumbnail:hover {
+    transition: .4s;
+    > img {
+        box-shadow: 0 0 0 3px $blue-dark;
+    }
 }
 
 .hero-slider {
     opacity: 0;
+}
+
+.head-link {
+
+}
+
+.head-link {
+    position: relative;
+    line-height: 1;
+    font-size: 22px;
+}
+
+@media (max-width: 991px) {
+    a.head-link:after {
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        content: "";
+        top: -.3em;
+        right: 100%;
+        width: 1.6em;
+        height: 1.6em;
+        margin-right: .4em;
+        border-radius: 100%;
+        background: url("//placehold.it/200x200") 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
 }
