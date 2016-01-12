@@ -1,26 +1,22 @@
+// Thumbnails (Bootstrap)
 .thumbnail {
     background-color: transparent;
-    img {
+    cursor: pointer;
+    transition: .4s;
+    -webkit-filter: grayscale(100%);
+    &:hover {
+        transition: .4s;
+        -webkit-filter: none;
+        > img {
+            box-shadow: 0 0 0 3px $blue-dark;
+        }
+    }
+    > img {
         width: 200px;
     }
 }
 
-a.thumbnail:focus {
-    border-color: transparent;
-}
-
-.owl-theme .owl-controls .owl-buttons div {
-    color: $gray;
-    background-color: $blue-dark;
-    padding: 10;
-    &.owl-next {
-        border-radius: $gutter * 4 $gutter $gutter * 4;
-    }
-    &.owl-prev {
-        border-radius: $gutter $gutter * 4 $gutter;
-    }
-}
-
+// Owl Carousel
 .owl-item.loading{
-    background: url(img/lazy-load.gif) no-repeat center center
+    background: url(img/lazy-load.gif) no-repeat center center;
 }

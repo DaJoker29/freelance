@@ -1,18 +1,7 @@
 .sidebar {
-    padding-top: $gutter;
-    padding-bottom: $gutter;
-
-    .well {
-        margin: $gutter 0;
-    }
-}
-
-.sidebar.affix {
-    right: 0;
-}
-
-@media (max-width: 991px) {
-    .sidebar.affix {
-        position: relative;
+    padding-top: 2 * $gutter;
+    padding-bottom: 2 * $gutter;
+    &.affix {
+        right: 0;
     }
 }

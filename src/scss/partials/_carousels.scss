@@ -1,0 +1,25 @@
+.hero-slider {
+    opacity: 0;
+}
+
+.thumbnail img,
+.hero-slider img,
+.modal img {
+    border: 2px solid $gray;
+    padding: 2px;
+}
+
+.hero-slider img {
+    max-height: 50%;
+}
+
+.modal img {
+    max-height: 480px;
+}
+
+.tag {
+    height: 75px;
+    margin: $gutter / 3 auto;
+    padding: 0 $gutter / 3;
+    border-radius: 10px;
+}

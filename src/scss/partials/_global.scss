@@ -1,7 +1,3 @@
-textarea {
-    resize: none;
-}
-
 a {
     transition: 0.4s;
     text-decoration: none;
@@ -13,6 +9,14 @@ a {
     }
 }
 
+textarea {
+    resize: none;
+}
+
 img {
     transition: .4s;
+}
+
+footer {
+    margin-top: $gutter / 3;
 }
