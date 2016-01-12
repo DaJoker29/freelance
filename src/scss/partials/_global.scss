@@ -1,0 +1,22 @@
+a {
+    transition: 0.4s;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $gold;
+        text-decoration: none;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+img {
+    transition: .4s;
+}
+
+footer {
+    margin-top: $gutter / 3;
+}

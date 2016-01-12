@@ -1,0 +1,22 @@
+// Thumbnails (Bootstrap)
+.thumbnail {
+    background-color: transparent;
+    cursor: pointer;
+    transition: .4s;
+    -webkit-filter: grayscale(100%);
+    &:hover {
+        transition: .4s;
+        -webkit-filter: none;
+        > img {
+            box-shadow: 0 0 0 3px $blue-dark;
+        }
+    }
+    > img {
+        width: 200px;
+    }
+}
+
+// Owl Carousel
+.owl-item.loading{
+    background: url(img/lazy-load.gif) no-repeat center center;
+}

@@ -12,5 +12,20 @@
     "grunt-contrib-watch": "^0.6.1",
     "load-grunt-tasks": "3.2.0"
   },
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "name": "freelance",
+  "description": "Single Page Site for my freelance web development business",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaJoker29/freelance.git"
+  },
+  "author": "Dewitt A. Buckingham, III <captain@zerodaedalus.net> (http://zerodaedalus.com)",
+  "bugs": {
+    "url": "https://github.com/DaJoker29/freelance/issues"
+  },
+  "homepage": "https://github.com/DaJoker29/freelance#readme"
 }

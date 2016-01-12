@@ -1,0 +1,19 @@
+.content > section {
+    left: -2000px;
+    opacity: 0;
+    position: relative;
+    padding: $gutter;
+    width: 0;
+    text-shadow: -1px 1px 0 transparentize(black, .6);
+}
+
+.head-link {
+    position: relative;
+    line-height: 1;
+    font-size: 22px;
+    margin-bottom: $gutter;
+}
+
+.form-control:focus {
+    border: 1px solid $orange;
+}
