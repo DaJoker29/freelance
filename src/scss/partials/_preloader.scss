@@ -1,0 +1,27 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('img/preloader.gif') no-repeat center;
+    margin: -100px 0 0 -100px;
+}
+
+#js-alert {
+    animation: fadein 2;
+}
+
+@keyframes fadein{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

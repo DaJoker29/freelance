@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+    .head-link:after {
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        content: "";
+        top: -.3em;
+        right: 100%;
+        width: 1.6em;
+        height: 1.6em;
+        margin-right: .4em;
+        border-radius: 100%;
+        background: url("//placehold.it/200x200") 0 0 no-repeat;
+        background-size: 100% 100%;
+    }
+    .sidebar.affix {
+        position: relative;
+    }
+}

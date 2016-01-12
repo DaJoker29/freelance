@@ -1,0 +1,7 @@
+.sidebar {
+    padding-top: 2 * $gutter;
+    padding-bottom: 2 * $gutter;
+    &.affix {
+        right: 0;
+    }
+}
