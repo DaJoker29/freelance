@@ -42,7 +42,7 @@
 
         obj = {
             'from': 'dajoker29@gmail.com',
-            'to': 'dj729@comcast.net',
+            'to': 'captain@zerodaedalus.net',
             'subject': 'Contact Form Response',
             'message': str
         };
