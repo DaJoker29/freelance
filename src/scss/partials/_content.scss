@@ -17,3 +17,7 @@
 .form-control:focus {
     border: 1px solid $orange;
 }
+
+#message-sent {
+    transition: .4s;
+}
